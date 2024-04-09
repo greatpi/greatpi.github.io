@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Mit6.S081</title>
+    <title>Mit6.S081准备工作及Debug方法</title>
     <url>/2024/03/30/Mit6-s081/</url>
-    <content><![CDATA[<p>​	在找日常实习时，由于只做了WebServer这一个项目，被告知项目太少，于是决定好好做点lab，丰富自己的简历。所以选择学习MIT 6.S081的内容，希望做完能<del>找到实习</del>有所收获。</p>
+    <content><![CDATA[<blockquote>
+</blockquote>
+<p>​	在找日常实习时，由于只做了WebServer这一个项目，被告知项目太少，于是决定好好做点lab，丰富自己的简历。所以选择学习MIT 6.S081的内容，希望做完能<del>找到实习</del>有所收获。</p>
 <p>​	课程官网：<a href="https://pdos.csail.mit.edu/6.S081/2021/">6.S081：Operating System Engineering</a></p>
 <p>​	官方教材及课程安排可以在课程官网中下载及查看。</p>
 <img src="/2024/03/30/Mit6-s081/schedule.jpg" class title="example">
@@ -62,6 +64,14 @@
     <content><![CDATA[<h3 id="参考教程：从零开始搭建个人博客"><a href="#参考教程：从零开始搭建个人博客" class="headerlink" title="参考教程：从零开始搭建个人博客"></a>参考教程：<a href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客</a></h3>]]></content>
       <tags>
         <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mit6.s081_Lab_Utilities</title>
+    <url>/2024/04/09/Mit6-s081-Lab-Utilities/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
