@@ -221,7 +221,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-03-31 01:13:34" itemprop="dateModified" datetime="2024-03-31T01:13:34+08:00">2024-03-31</time>
+                <time title="修改时间：2024-04-09 21:26:51" itemprop="dateModified" datetime="2024-04-09T21:26:51+08:00">2024-04-09</time>
               </span>
 
           
@@ -253,7 +253,37 @@
 <p>​	然后每个lab有对应的分支，我们切换到其对应的分支即可（以第一个lab为例）：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> xv6-labs-2021</span><br><span class="line">git checkout util</span><br></pre></td></tr></table></figure>
 
-<h2 id="Debug方法"><a href="#Debug方法" class="headerlink" title="Debug方法"></a>Debug方法</h2>
+<h2 id="Debug方法（gdb调试）"><a href="#Debug方法（gdb调试）" class="headerlink" title="Debug方法（gdb调试）"></a>Debug方法（gdb调试）</h2><ul>
+<li>在终端中输入如下命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make qemu-gdb</span><br></pre></td></tr></table></figure>
+
+<p>出现如下提示：</p>
+<img src="/2024/03/30/Mit6-s081/image-20240409211817702.png" class title="image-20240409211817702">
+
+<ul>
+<li>在<strong>另一终端</strong>中输入如下命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gdb-multiarch</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在<strong>gdb</strong>中对qemu-gdb进行连接</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">target remote localhost:25000</span><br></pre></td></tr></table></figure>
+
+<p>注意此处的端口号为第一步所出现的</p>
+<p>出现如下提示：</p>
+<img src="/2024/03/30/Mit6-s081/image-20240409212423782.png" class title="image-20240409212423782">
+
+<ul>
+<li>选择可执行文件进行调试（以内核为例）</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file kernel/kernel</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/03/30/Mit6-s081/image-20240409212634158.png" class title="image-20240409212634158">
+
+<p>后续就可以进行正常的gdb操作了</p>
+
       
     </div>
 
